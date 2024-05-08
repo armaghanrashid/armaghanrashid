@@ -41,3 +41,6 @@ Developed and marketed an innovative biodegradable wheat spoon. Spearheaded prod
 ### McGill University, Montreal — Vice President of Student Affairs (2023 - 2024)
 Managed significant student affairs events and initiatives, improving campus life and student engagement.
 
+## GitHub Stats
+[![Armaghan's GitHub stats](https://github-readme-stats.vercel.app/api?username=armaghanrashid&show_icons=true&theme=dark)](https://github.com/armaghanrashid/github-readme-stats)
+
