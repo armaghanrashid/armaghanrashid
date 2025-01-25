@@ -4,7 +4,6 @@
 CS Major at McGill University with a passion for leveraging technology to solve real-world problems. Proficient in Python, C, and Bash, with experience in web development and analytical skills in statistical analysis and data modeling. Dedicated to using data-driven insights for decision-making and operational efficiency.
 
 ## Contact Information
-📧 Email: [armaghanrashid@hotmail.com](mailto:armaghanrashid@hotmail.com)  
 🔗 LinkedIn: [Muhammad Armaghan Rashid](https://www.linkedin.com/in/muhammad-armaghan-rashid-6515b1219)
 
 ## Skills
