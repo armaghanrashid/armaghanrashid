@@ -2,6 +2,16 @@
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg"><img alt="Muhammad Armaghan Rashid, software engineer · data · cloud · backend · AI/ML. B.Sc. Computer Science, McGill University · graduating May 2027. Based in Montreal, Canada, time zone America/Montreal (UTC−4). Experience: Visionet, Data &amp; AI Intern (2026): ai pre-sales copilot, -35% prep time; Visionet, Cloud &amp; AI Engineering Intern (2024): 5+ fastapi services, -40% latency; UN World Food Programme, Intern (2023): etl + grafana, 5,000+ served; Blekinge Institute of Technology, Research Intern (2022–23): opencv video-quality metrics. Builds: enclave-messenger, parallax-ball-tracker, meridian-trader, conduit-311-pipeline, quorum-kv, resume-wrecker. Latest CI: enclave-messenger status unknown, parallax-ball-tracker status unknown, meridian-trader status unknown, conduit-311-pipeline status unknown, quorum-kv status unknown, resume-wrecker status unknown. Open to software engineering, data engineering, AI/ML roles starting 2027, Montreal / remote." src="assets/terminal-light.svg" width="100%"></picture></p>
 
+### See it run
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="https://github.com/armaghanrashid/parallax-ball-tracker"><img src="assets/media/parallax.gif" alt="parallax-ball-tracker: two-camera tracking and the line call" width="100%"></a><br><sub><b>parallax-ball-tracker</b> · two-camera tracking and the line call</sub></td>
+<td width="33%" valign="top"><a href="https://github.com/armaghanrashid/enclave-messenger"><img src="assets/media/enclave.png" alt="enclave-messenger: chat" width="100%"></a><br><sub><b>enclave-messenger</b> · chat</sub></td>
+<td width="33%" valign="top"><a href="https://github.com/armaghanrashid/meridian-trader"><img src="assets/media/meridian.png" alt="meridian-trader: market regimes from a hidden Markov model" width="100%"></a><br><sub><b>meridian-trader</b> · market regimes from a hidden Markov model</sub></td>
+</tr>
+</table>
+
 ### In plain text
 
 I build the data and cloud plumbing that products quietly depend on: ETL pipelines on Databricks, containerised FastAPI services and infrastructure as code. I'm a computer science student at McGill (May 2027) with five internships behind me, across data, cloud, AI and research, and I'm looking for new-grad software, data engineering and AI/ML roles.
