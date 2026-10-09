@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="190" viewBox="0 0 440 190" role="img" aria-label="meridian-trader: Market-regime research with purged walk-forward validation, leakage canaries and honest significance tests.">
+<title>meridian-trader: Market-regime research with purged walk-forward validation, leakage canaries and honest significance tests.</title>
+<style>
+text{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+.n{font-size:15px;font-weight:600;fill:#f0f6fc}
+.t{font-size:10px;letter-spacing:0.6px;fill:#F59E0B}
+.d{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;fill:#9198a1}
+.k{font-size:11px;fill:#9198a1}
+.s{stroke:#F59E0B;fill:none;stroke-width:1.4}
+.f{fill:#F59E0B}
+.m{fill:#9198a1;font-size:9.5px}
+.g{stroke:#3d444d;stroke-width:1;fill:none}
+</style>
+<defs><clipPath id="r"><rect width="440" height="190" rx="6"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="439" height="189" rx="6" fill="#0d1117" stroke="#3d444d"/>
+<rect width="3" height="190" fill="#F59E0B" clip-path="url(#r)"/>
+<text x="18" y="30" class="n">meridian-trader</text>
+<text x="426" y="30" text-anchor="end" class="t">DATA SCIENCE</text>
+<text x="18" y="53" class="d">Market-regime research with purged walk-forward validation,</text><text x="18" y="69" class="d">leakage canaries and honest significance tests.</text>
+<g transform="translate(57 80) scale(1.1)"><g class="m"><text x="0" y="12">train</text><text x="0" y="66">test</text></g><g class="s"><rect x="40" y="4" width="60" height="10"/><rect x="104" y="56" width="20" height="10"/><rect x="40" y="18" width="80" height="10"/><rect x="124" y="56" width="20" height="10"/><rect x="40" y="32" width="100" height="10"/><rect x="144" y="56" width="20" height="10"/></g><path class="g" d="M184 8v58"/><text class="m" x="192" y="20">HMM regimes</text><text class="m" x="192" y="36">deflated Sharpe</text><text class="m" x="192" y="52">bootstrap CIs</text></g>
+<text x="18" y="178" class="k">Python · pandas · scikit-learn · hmmlearn</text>
+</svg>
