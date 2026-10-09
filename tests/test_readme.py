@@ -88,3 +88,20 @@ def test_generation_is_deterministic(tmp_path, statuses):
     generate(tmp_path, now=datetime(2026, 10, 9, 7, 12, tzinfo=UTC), statuses=statuses)
     second = {p.name: p.read_bytes() for p in Path(tmp_path).rglob("*") if p.is_file()}
     assert first == second
+
+
+def test_cards_follow_profile_yaml_order(built, profile):
+    r = (built / "README.md").read_text()
+    hrefs = re.findall(r'<td width="50%"[^>]*><a href="https://github.com/armaghanrashid/([^"]+)"', r)
+    assert hrefs == [p["repo"] for p in profile["projects"]]
+    assert hrefs == ["enclave-messenger", "parallax-ball-tracker", "meridian-trader",
+                     "conduit-311-pipeline", "quorum-kv", "resume-wrecker"]
+
+
+def test_output_is_stable_across_clock_times(tmp_path, statuses):
+    shutil.copy(ROOT / "profile.yaml", tmp_path / "profile.yaml")
+    generate(tmp_path, now=datetime(2026, 10, 9, 7, 12, tzinfo=UTC), statuses=statuses)
+    first = {p.name: p.read_bytes() for p in Path(tmp_path).rglob("*") if p.is_file()}
+    generate(tmp_path, now=datetime(2026, 10, 9, 21, 48, tzinfo=UTC), statuses=statuses)
+    second = {p.name: p.read_bytes() for p in Path(tmp_path).rglob("*") if p.is_file()}
+    assert first == second

@@ -96,3 +96,20 @@ def test_card_text_fits_inside_card(profile):
 def test_card_colors_light_scheme_uses_neutrals():
     c = card_colors("#CFE23C", "light")
     assert c["bg"] == "#ffffff" and c["text"] == "#1f2328" and c["muted"] == "#59636e"
+
+
+def test_wrecker_boxes_are_equal_and_unlabelled_by_my_part():
+    d = DIAGRAMS["wrecker"]
+    assert "my part" not in d
+    assert "stroke-width" not in d
+
+
+def test_quorum_leader_label_fits_its_circle():
+    import re
+
+    d = DIAGRAMS["quorum"]
+    r = float(re.search(r'<circle cx="40" cy="35" r="([\d.]+)"', d).group(1))
+    label = re.search(r">(lead\w*)</text>", d).group(1)
+    half_width = len(label) * 9.5 * MONO_EM / 2
+    assert r >= half_width + 4
+    assert 'x="40" y="38" text-anchor="middle"' in d

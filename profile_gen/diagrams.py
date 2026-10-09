@@ -55,24 +55,23 @@ DIAGRAMS: dict[str, str] = {
         '<text class="m" x="128" y="64">quality gates</text>'
     ),
     "quorum": (
-        '<g class="s"><circle cx="40" cy="35" r="14"/><circle cx="100" cy="14" r="10"/>'
+        '<g class="s"><circle cx="40" cy="35" r="16"/><circle cx="100" cy="14" r="10"/>'
         '<circle cx="100" cy="56" r="10"/><circle cx="160" cy="14" r="10"/>'
         '<circle cx="160" cy="56" r="10"/>'
-        '<path d="M53 29l38-12M53 41l38 12M54 33l96-17M54 37l96 17" stroke-dasharray="2 3"/></g>'
+        '<path d="M55 29l36-12M55 41l36 12M56 33l94-17M56 37l94 17" stroke-dasharray="2 3"/></g>'
         '<path class="g" d="M190 0v70" stroke-dasharray="4 3"/>'
-        '<text class="m" x="28.5" y="38">lead</text>'
+        '<text class="m" x="40" y="38" text-anchor="middle">lead</text>'
         '<text class="m" x="200" y="22">partition</text>'
         '<text class="m" x="200" y="38">crash · drop</text>'
         '<text class="m" x="200" y="54">linearizable ✓</text>'
     ),
     "wrecker": (
-        '<g class="s"><rect x="4" y="22" width="56" height="26" rx="3" style="stroke-width:2.4"/>'
+        '<g class="s"><rect x="4" y="22" width="56" height="26" rx="3"/>'
         '<rect x="84" y="22" width="56" height="26" rx="3"/>'
         '<rect x="164" y="22" width="56" height="26" rx="3"/>'
         '<rect x="244" y="22" width="52" height="26" rx="3"/>'
         '<path d="M60 35h24M140 35h24M220 35h24"/></g>'
         '<g class="m"><text x="12" y="39">react</text><text x="92" y="39">flask</text>'
-        '<text x="168" y="39">llm api</text><text x="250" y="39">azure</text>'
-        '<text x="4" y="64">my part</text></g>'
+        '<text x="168" y="39">llm api</text><text x="250" y="39">azure</text></g>'
     ),
 }

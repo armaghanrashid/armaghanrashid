@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import UTC, datetime
+from datetime import datetime
 from typing import Any
 
 from . import ci
@@ -130,8 +130,6 @@ def build_lines(profile: dict[str, Any], statuses: dict[str, str], now: datetime
             sym, cls = SYMBOL[statuses.get(p["repo"], ci.UNKNOWN)]
             cells.append((i * COL_PITCH, [(cls, sym), (PLAIN, " " + p["repo"])]))
         out(cells)
-    stamp = now.astimezone(UTC).strftime("%H:%M")
-    out([(0, [(DIM, f"last checked: {stamp} UTC")])])
     blank()
 
     # open to
@@ -228,7 +226,7 @@ def render_terminal(
             tdelay = f"{line.delay + 0.1:.2f}s"
             group.append(
                 f'<text x="{num(x0)}" y="{y}" xml:space="preserve">{_runs_markup(cmd_runs)}</text>'
-                f'<rect class="t" x="{num(x0 - 1)}" y="{y - 15}" width="{num(cover_right - x0 + 1)}" '
+                f'<rect class="t" transform="scale(0)" x="{num(x0 - 1)}" y="{y - 15}" width="{num(cover_right - x0 + 1)}" '
                 f'height="{LH}" fill="{t["bg"]}" style="transform-origin:{cover_right}px 0;'
                 f"animation-delay:{tdelay};animation-duration:{line.type_dur:.2f}s;"
                 f'animation-timing-function:steps({steps},end)"/>'
