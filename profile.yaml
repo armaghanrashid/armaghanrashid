@@ -1,0 +1,68 @@
+# Source of truth for README.md and assets/*.svg. Edit this, then run `make` (or let the nightly workflow do it).
+login: armaghanrashid
+name: Muhammad Armaghan Rashid
+tagline: software engineer · data · cloud · backend · AI/ML
+education: B.Sc. Computer Science, McGill University · graduating May 2027
+location: Montreal, Canada
+timezone: America/Montreal
+linkedin: https://www.linkedin.com/in/muhammad-armaghan-rashid
+open_to:
+  roles: [software engineering, data engineering, AI/ML]
+  start: "2027"
+  where: Montreal / remote
+
+summary: >-
+  I build the data and cloud plumbing that products quietly depend on: ETL pipelines on Databricks,
+  containerised FastAPI services and infrastructure as code. I'm a computer science student at McGill
+  (May 2027) with five internships behind me, across data, cloud, AI and research, and I'm looking for
+  new-grad software, data engineering and AI/ML roles.
+
+experience:
+  - {start: "2026.06", org: visionet, org_full: Visionet, role: Data & AI Intern, year: "2026",
+     log: ai pre-sales copilot, metric: "-35%", metric_note: prep time,
+     impact: "AI pre-sales copilot that drafts proposals and estimates: about 35% less proposal-prep time in pilot use. PySpark ETL on Databricks, Azure and GCP."}
+  - {start: "2024.06", org: visionet, org_full: Visionet, role: Cloud & AI Engineering Intern, year: "2024",
+     log: 5+ fastapi services, metric: "-40%", metric_note: latency,
+     impact: "Re-architected batch workflows into 5+ FastAPI microservices on Azure: **40% lower latency**. Terraform plus GitHub Actions CI/CD."}
+  - {start: "2023.06", org: un wfp, org_full: UN World Food Programme, role: Intern, year: "2023",
+     log: etl + grafana, metric: "5,000+", metric_note: served,
+     impact: "Grafana dashboards and Python ETL for programmes serving 5,000+ people; 20% faster reporting."}
+  - {start: "2022.02", org: bth.se, org_full: Blekinge Institute of Technology, role: Research Intern, year: "2022–23",
+     log: opencv video-quality metrics, metric: "", metric_note: "",
+     impact: "Video-quality metrics in OpenCV and scikit-image; reproducible experiments with pytest and Docker."}
+
+stack:
+  Languages: [Python, SQL, Go, Java, C, TypeScript, OCaml, Bash, R]
+  Data & ML: [PySpark, Databricks, DuckDB, pandas, NumPy, scikit-learn, OpenCV, hmmlearn]
+  Cloud & DevOps: [AWS, Azure, GCP, Docker, Terraform, GitHub Actions, Linux]
+  Backend: [FastAPI, Flask, Node, React, REST, MySQL, pytest, JUnit]
+
+# Identity colours: each comes from the project's domain (see the design spec).
+projects:
+  - {repo: enclave-messenger, tag: messaging · security, color: "#0DBD8B", lang: TypeScript,
+     desc: "Invite-only end-to-end-encrypted messenger with a broadcast feed and a linked-notes graph.",
+     stack: [TypeScript, React, Node, Matrix], diagram: enclave}
+  - {repo: parallax-ball-tracker, tag: computer vision · aws, color: "#CFE23C", lang: Python,
+     desc: "Two-camera ball tracking that rebuilds the 3D ball path and makes tennis, cricket and football line calls. Serverless on AWS.",
+     stack: [Python, OpenCV, Kalman filter, AWS Lambda, Terraform], diagram: parallax}
+  - {repo: meridian-trader, tag: data science, color: "#F59E0B", lang: Python,
+     desc: "Market-regime research with purged walk-forward validation, leakage canaries and honest significance tests.",
+     stack: [Python, pandas, scikit-learn, hmmlearn], diagram: meridian}
+  - {repo: conduit-311-pipeline, tag: data engineering, color: "#2B7DE9", lang: Python,
+     desc: "NYC 311 ETL in bronze, silver and gold layers with data-quality gates, CI and Terraform-defined AWS infrastructure.",
+     stack: [Python, DuckDB, Parquet, Terraform], diagram: conduit}
+  - {repo: quorum-kv, tag: distributed systems, color: "#00ADD8", lang: Go,
+     desc: "Raft consensus key-value store, tested for linearizability under partitions, crashes and message loss.",
+     stack: [Go, Raft, fault injection], diagram: quorum}
+  - {repo: resume-wrecker, tag: McHacks 2025 · team, color: "#E5484D", lang: TypeScript,
+     desc: "Resume critique that can roast you, with spoken feedback. Built as a team in 24 hours.",
+     stack: [React, TypeScript, Flask, Azure], diagram: wrecker}
+
+media:  # "See it run" strip: files are copied into assets/media from each repo's docs/media
+  - {repo: parallax-ball-tracker, file: parallax.gif, caption: two-camera tracking and the line call}
+  - {repo: enclave-messenger, file: enclave.png, caption: chat, feed and notes graph}
+  - {repo: meridian-trader, file: meridian.png, caption: market regimes from a hidden Markov model}
+
+closed_source:
+  - {name: Slate, desc: offline-first personal finance app}
+  - {name: Orca, desc: on-device lecture transcription for macOS}
