@@ -24,9 +24,9 @@ def texts(svg_path):
     return ["".join(t.itertext()) for t in root.iter(f"{SVG}text")]
 
 
-def test_every_svg_parses(built):
+def test_every_svg_parses(built, profile):
     files = sorted((built / "assets").glob("*.svg"))
-    assert len(files) == 2 + 12
+    assert len(files) == 2 + 2 * len(profile["projects"])  # terminal + a light/dark card per project
     for f in files:
         assert ET.parse(f).getroot().tag == f"{SVG}svg", f.name
 

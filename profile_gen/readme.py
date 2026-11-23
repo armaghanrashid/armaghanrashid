@@ -42,9 +42,13 @@ def media_section(profile: dict[str, Any], root: Path) -> str:
             f'<img src="assets/media/{m["file"]}" alt="{alt}" width="100%"></a><br>'
             f"<sub><b>{html.escape(m['repo'])}</b> · {html.escape(m['caption'])}</sub></td>"
         )
+    # Three across; two or four items read better as a 2-wide grid than with empty cells.
+    cols = 2 if len(cells) in (2, 4) else 3
+    width = "50%" if cols == 2 else "33%"
+    cells = [c.replace('<td width="33%"', f'<td width="{width}"', 1) for c in cells]
     rows = []
-    for i in range(0, len(cells), 3):
-        chunk = cells[i:i + 3] + ['<td width="33%"></td>'] * (3 - len(cells[i:i + 3]))
+    for i in range(0, len(cells), cols):
+        chunk = cells[i:i + cols] + [f'<td width="{width}"></td>'] * (cols - len(cells[i:i + cols]))
         rows.append("<tr>\n" + "\n".join(chunk) + "\n</tr>")
     return "### See it run\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n"
 

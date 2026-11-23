@@ -94,7 +94,7 @@ def test_cards_follow_profile_yaml_order(built, profile):
     r = (built / "README.md").read_text()
     hrefs = re.findall(r'<td width="50%"[^>]*><a href="https://github.com/armaghanrashid/([^"]+)"', r)
     assert hrefs == [p["repo"] for p in profile["projects"]]
-    assert hrefs == ["enclave-messenger", "parallax-ball-tracker", "meridian-trader",
+    assert hrefs == ["starport", "enclave-messenger", "parallax-ball-tracker", "meridian-trader",
                      "conduit-311-pipeline", "quorum-kv", "resume-wrecker"]
 
 

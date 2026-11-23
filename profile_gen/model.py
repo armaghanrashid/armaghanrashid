@@ -7,12 +7,14 @@ from typing import Any
 
 import yaml
 
+from .diagrams import DIAGRAMS as _DRAWINGS
+
 REQUIRED = [
     "login", "name", "tagline", "education", "location", "timezone", "linkedin", "open_to",
     "summary", "experience", "stack", "projects", "media", "closed_source",
 ]
 PROJECT_KEYS = ["repo", "tag", "color", "desc", "stack", "diagram"]
-DIAGRAMS = {"enclave", "parallax", "meridian", "conduit", "quorum", "wrecker"}
+DIAGRAMS = set(_DRAWINGS)  # every key that has a drawing in diagrams.py
 
 
 def load_profile(path: Path) -> dict[str, Any]:

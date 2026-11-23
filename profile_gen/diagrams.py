@@ -8,6 +8,21 @@ All are drawn in a 300x70 box with four classes defined by the card stylesheet:
 from __future__ import annotations
 
 DIAGRAMS: dict[str, str] = {
+    "starport": (
+        '<rect class="s" x="4" y="22" width="52" height="26" rx="3"/>'
+        '<text class="m" x="14" y="39">bots</text>'
+        '<path class="s" d="M56 35h40" stroke-dasharray="3 3"/>'
+        '<text class="m" x="62" y="18">spsc</text>'
+        '<rect class="s" x="96" y="22" width="66" height="26" rx="3"/>'
+        '<text class="m" x="103" y="39">matcher</text>'
+        '<path class="s" d="M162 35h24"/>'
+        '<g class="f"><rect x="190" y="6" width="30" height="6"/><rect x="190" y="14" width="46" height="6"/>'
+        '<rect x="190" y="22" width="22" height="6"/><rect x="190" y="42" width="38" height="6"/>'
+        '<rect x="190" y="50" width="54" height="6"/><rect x="190" y="58" width="26" height="6"/></g>'
+        '<path class="g" d="M186 35h70"/>'
+        '<text class="m" x="262" y="20">asks</text>'
+        '<text class="m" x="262" y="58">bids</text>'
+    ),
     "enclave": (
         '<rect class="s" x="4" y="22" width="62" height="26" rx="3"/>'
         '<text class="m" x="13" y="39">pwa</text>'

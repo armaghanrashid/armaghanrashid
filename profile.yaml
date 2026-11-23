@@ -32,13 +32,16 @@ experience:
      impact: "Video-quality metrics in OpenCV and scikit-image; reproducible experiments with pytest and Docker."}
 
 stack:
-  Languages: [Python, SQL, Go, Java, C, TypeScript, OCaml, Bash, R]
+  Languages: [Python, SQL, C++, Go, Java, C, TypeScript, OCaml, Bash, R]
   Data & ML: [PySpark, Databricks, DuckDB, pandas, NumPy, scikit-learn, OpenCV, hmmlearn]
   Cloud & DevOps: [AWS, Azure, GCP, Docker, Terraform, GitHub Actions, Linux]
   Backend: [FastAPI, Flask, Node, React, REST, MySQL, pytest, JUnit]
 
 # Identity colours: each comes from the project's domain (see the design spec).
 projects:
+  - {repo: starport, tag: C++20 · low latency, color: "#F34B7D", lang: C++,
+     desc: "C++20 trading simulation: order books at ~44M ops/s, lock-free queues, ECS physics and bit-identical replay.",
+     stack: [C++20, lock-free, ECS, CMake], diagram: starport}
   - {repo: enclave-messenger, tag: messaging · security, color: "#0DBD8B", lang: TypeScript,
      desc: "Invite-only end-to-end-encrypted messenger with a broadcast feed and a linked-notes graph.",
      stack: [TypeScript, React, Node, Matrix], diagram: enclave}
@@ -59,6 +62,7 @@ projects:
      stack: [React, TypeScript, Flask, Azure], diagram: wrecker}
 
 media:  # "See it run" strip: files are copied into assets/media from each repo's docs/media
+  - {repo: starport, file: starport.gif, caption: haulers trading between station markets}
   - {repo: parallax-ball-tracker, file: parallax.gif, caption: two-camera tracking and the line call}
   - {repo: enclave-messenger, file: enclave.png, caption: chat, feed and notes graph}
   - {repo: meridian-trader, file: meridian.png, caption: market regimes from a hidden Markov model}
